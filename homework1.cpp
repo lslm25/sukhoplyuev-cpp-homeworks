@@ -1,7 +1,15 @@
 #include <iostream>
-
-using std::cout, std::endl;
+#include <string>
 
 int main() {
-    cout << "Hello, World!" << endl;
+    std::string name;
+    
+    // Запрос имени у пользователя
+    std::cout << "Bведите ваше имя: ";
+    std::getline(std::cin, name);
+    
+    // Вывод персонализированного приветствия
+    std::cout << "Привет, " << name << "! Добро пожаловать в программу!" << std::endl;
+    
+    return 0;
 }
